@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Labrada:wght@300&family=Lato:ital@1&display=swap');
+
+body {
+    background-color: rgb(37, 37, 69);
+    padding: 60px;
+}
+
+.title {
+    background-color: rgb(197, 209, 166);
+    padding: 10px 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.header_figure img {
+    width: 120px;
+    float: left;
+    padding-right: 50px;
+}
+
+p {
+    padding: 45px;
+    font-weight: 600;
+    font-size: 30px;
+    font-family: 'Labrada', serif;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.main {
+    padding: 20px;
+    background-color: rgb(63, 68, 103);
+
+}
+
+
+.title_main img {
+    width: 80px;
+    float: left;
+    padding-top: 20px;
+    padding-right: 50px;
+
+
+
+}
+
+.main p {
+    padding-left: 2px;
+    font-weight: 600;
+    font-size: 30px;
+    background-color: lightsteelblue;
+    border-radius: 10px;
+    font-size: 40px;
+    width: 40%;
+
+}
+
+.main_figure img {
+    padding-left: 100px;
+    width: 350px;
+}
+
+.title_main {
+    padding-left: 100px;
+
+}
+
+.main_table {
+    background-color: lightsteelblue;
+    position: absolute;
+    left: 950px;
+    top: 400px;
+    border-radius: 30px;
+    font-family: 'Labrada', serif;
+
+}
+
+.main_table table {
+    border-collapse: separate;
+    border-spacing: 40px;
+}
+
+.main_table table tr {
+    display: flex;
+    gap: 30px;
+}
+
+.main_table table td {
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    text-align: center;
+}
+
+.footer {
+    background-color: lightsteelblue;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.footer_container p {
+    float: left;
+    padding-top: 25px;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-family: 'Labrada', serif;
+    font-weight: bold;
+
+
+}
+
+
+.footer_figure {
+    width: 100px;
+    padding-left: 80px;
+    padding: 0px 0px 10px 10px;
+    background-color: rgb(113, 115, 143);
+    border-radius: 20px;
+    float: left;
+
+}
+
+.footer_figure:hover {
+    background-color: rgb(123, 123, 123);
+    cursor: pointer;
+}
+
+.footer_container article {
+    display: flex;
+    gap: 10px;
+}
+
+.info_avatar {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.caracterisiticas_table {
+    font-size: 18px;
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: rgb(37, 37, 69);
+        padding: 10px;
+    }
+
+    .title {
+        background-color: rgb(197, 209, 166);
+    }
+
+    .header_figure img {
+        width: 80px;
+        padding-right: 20px;
+    }
+
+
+    p {
+        display: flex;
+        padding: 20px;
+        font-weight: 600;
+        font-size: 20px;
+        font-family: 'Labrada', serif;
+        font-size: 25px;
+        font-weight: bold;
+        justify-content: center;
+    }
+
+
+    .title_main {
+        display: flex;
+        padding: 0%;
+        justify-content: center;
+    }
+
+
+
+    .title_main p {
+        display: flex;
+        padding-right: 50px;
+        padding-left: 100px;
+        position: absolute;
+        top: 25%;
+        z-index: 1;
+    }
+
+    .title_main figure img {
+        padding: 0%;
+        position: absolute;
+        left: 10%;
+        z-index: 2;
+    }
+
+    .main_figure img {
+        display: flex;
+        width: 100%;
+        position: relative;
+        right: 55%;
+        top: 55px;
+        z-index: 100;
+        
+    }
+
+    .main_table {
+        position: relative;
+        display: flex;
+        top: -38px;
+        left: 0%;
+    }
+
+    .main_table table {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .footer_figure:hover {
+        background-color: rgb(123, 123, 123);
+        cursor: pointer;
+    }
+
+   
+
+    .info_avatar {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .caracterisiticas_table {
+        font-size: 16px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .footer_figure {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        
+      }
+
+}
