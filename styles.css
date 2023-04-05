@@ -99,32 +99,32 @@ span {
 }
 
 .footer {
+    display: flex;
     background-color: lightsteelblue;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    padding: 0%;
+    justify-content: center;
 }
 
-.footer_container p {
-    float: left;
-    padding-top: 25px;
-    padding-left: 200px;
-    padding-right: 200px;
-    font-family: 'Labrada', serif;
-    font-weight: bold;
-
-
+.footer p {
+    font-size: 20px;
 }
 
-
-.footer_figure {
-    width: 100px;
-    padding-left: 80px;
-    padding: 0px 0px 10px 10px;
-    background-color: rgb(113, 115, 143);
-    border-radius: 20px;
-    float: left;
-
+.pokemon img{
+    display: flex;
+    padding: 0%;
+    width: 120px;
+    align-items: center;
 }
+
+.pokemon img:hover{
+    background-color: slategray;
+    border-radius: 10px;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 
 .footer_figure:hover {
     background-color: rgb(123, 123, 123);
