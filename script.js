@@ -1,4 +1,4 @@
-const URL_API = "https://pokeapi.co/api/v2/pokemon?limit=4&offset=0";
+const URL_API = "https://pokeapi.co/api/v2/pokemon?limit=8&offset=0";
 let pokemons = [];
 //Funcion para traer todos los pokemons;
 const getPokemonsFromApi = async (url) => {
@@ -98,11 +98,12 @@ containerBtns.addEventListener('click', (e) => {
     }
 });
 
+
 const headerPokemons = document.querySelector("#searchInput");
 const searchInput = document.querySelector('.container_pokemons');
 
 //Input de búsqueda
-headerPokemons.addEventListener('keyup', (e) => {
+headerPokemons.addEventListener('input', (e) => {
     const searchValue = e.target.value.toLowerCase();
     console.log(searchValue)
     const filteredPokemons = pokemons.filter((pokemon) =>
@@ -111,8 +112,16 @@ headerPokemons.addEventListener('keyup', (e) => {
     );
     console.log("filter", filteredPokemons);
     printImage(filteredPokemons, searchInput)
+    
 });
+searchInput.addEventListener('click', (e) => {
+    const pokemonId = e.target.getAttribute('data-img');
+    const selectedPokemon = pokemons.find(pokemon => pokemon.id == pokemonId);
 
+    if (selectedPokemon) {
+        printPokemonInfo(selectedPokemon);
+    }
+});
 
 
 
